@@ -1,0 +1,306 @@
+* {
+    /* border: 1px solid rgb(255, 255, 255); */
+}
+
+body {
+    /* overflow: hidden; */
+    font-family: 'Open Sans', arial, helvetica, sans-serif;
+    color: white;
+    background-color: rgb(1, 4, 53);
+    background-image: url(../images/bg6.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+    background-position-y: -200px;
+    background-color: rgb(42, 170, 230);
+
+}
+
+header {
+    float: left;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    background-position: bottom center;
+    background-size: cover;
+    background-image: url(../images/bg3.jpg);
+    text-align: right;
+    overflow: hidden;
+    border-right: solid 15px rgb(19, 28, 80);
+    transition: border-right-color .5s ease,
+                background-color 1s ease;
+}
+
+header:hover {
+    border-right-color: rgb(58, 186, 245);
+    background-color: rgb(58, 186, 245);
+}
+
+nav{
+    position: fixed;
+    text-align: center;
+    float: left;
+    width: 0.01em;
+    margin-left: 20%;
+    height: 99%;
+    overflow: hidden;
+    background-color: rgba(24, 4, 97, .5);
+    border: rgb(255, 255, 255) solid 5px;
+    transition: width 1s ease;
+
+}
+
+nav:hover {
+    width: 8em;
+}
+
+nav ul{
+    /* width: 500px; */
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+nav li{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15% 5px;
+    border-bottom: solid 1px rgb(58, 186, 245);
+    text-decoration: none;
+    list-style: none;
+    font-size: 14px;
+    font-variant: small-caps;
+    transition: background-color .5s ease;
+
+}
+
+nav li:hover{
+    background-color: rgb(58, 186, 245);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 20%;
+    height: 25%;
+    text-align: left;
+}
+
+main{
+    box-sizing: border-box;
+    width: 60%;
+    margin-left: 29%;
+    margin-top: 69px;
+    height: 621px;
+    float: left;
+    padding: 40px;
+    border: solid white 12px;
+    background-color: rgba(255,255,255,.25);
+    border-radius: 18px;
+    transition: border 1s ease,
+                background-color 1s ease,
+                color 1s ease;
+    color: black;
+    
+}
+
+main:hover{
+    color: white;
+    border: solid rgb(5, 68, 97) 12px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+#avatar {
+    width: 100%;
+    text-align: center;
+}
+
+#avatar img{
+    width: 13em;
+    margin-top: 25%;
+    border-radius: 50%;
+    position: relative;
+    bottom: 0px;
+    transition: border 1s ease,
+                bottom .5s ease,
+                border-radius .5s ease;
+    border:  rgb(34, 135, 182) 10px solid;
+
+}
+
+#avatar img:hover{
+    border: rgb(84, 235, 255) 10px solid;
+    bottom: 10px;
+    border-radius: 0 25%;
+}
+
+h1{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    width: 80%;
+    margin-left: 10%;
+    height: 25%;
+    overflow: hidden;
+    text-align: center;
+    font-style: oblique;
+    line-height: 2em;
+}
+
+#main_name{
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    color: rgb(23, 12, 128);
+    text-shadow: 3px 3px 0px rgb(56, 221, 250);
+    font-size: 25px;
+    font-variant: small-caps;
+    transition: color 1s ease,
+                text-shadow 1s ease,
+                width 1s ease;
+    width: 0%;
+    height: 30px
+
+}
+
+header:hover #main_name{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 0px rgb(56, 221, 250);
+    width: 100%;
+}
+
+header:hover .fab{
+    color: rgb(58, 186, 245)
+}
+
+#profession {
+    margin-top: 55px;
+    display: inline-block;
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+    transition: height 1s ease;
+    line-height: 18px;
+}
+
+#passe_o_mouse {
+    height: 35%;
+    display: inline-block;
+    transition: height .5s ease;
+    overflow: hidden;
+}
+
+header:hover #passe_o_mouse {
+    height: 0;
+}
+
+header:hover #profession {
+    transition-delay: .3s;
+    height: 60px;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+
+}
+
+footer li i{
+    color: rgb(11, 161, 230);
+    transition: color .5s ease,
+                transform 1.2s ease;
+}
+
+footer li:hover i{
+    color:rgb(255, 255, 255);
+    transform: rotate(360deg);
+}
+
+.name_in{
+    overflow: hidden;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-top: 5px;
+    font-size: 15px;
+    height: 25px;
+    width: 0;
+    transition: width 1s ease;
+}
+
+footer ul li:hover .name_in {
+    width: 80%;
+}
+
+footer ul li{
+    text-align: center;
+    box-sizing: border-box;
+}
+
+#left_items {
+    float: left;
+    border: solid red 5px;
+}
+
+.chk {
+    margin-right: 2px;
+    width: 40px;
+    height: 20px;
+    background-color: rgba(134, 131, 131, 0.493);
+    display: inline-block;
+    border: solid rgba(64, 66, 66, 0.849) 3px;
+    border-radius: 10px;
+    position: relative;
+    transition: border 0.5s ease,
+                background-color 0.5s ease;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.445);
+}
+
+input:checked + div{
+    border: solid rgb(11, 161, 230) 3px;
+    background-color: white;
+}
+
+.circle_check{
+    width: 15px;
+    height: 15px;
+    background-color: rgba(64, 66, 66, 0.849);
+    border-radius: 20px;
+    position: absolute;
+    left: 3px;
+    top: 2.45px;
+    transition: left .5s ease,
+                transform .2s ease-in-out,
+                background-color .5s ease;
+    
+}
+
+input[type="checkbox"]:checked + div div{
+    transform: translate(20px);
+    background-color: rgb(11, 161, 230);
+    
+}
+
+input[type="checkbox"] {
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+.label_check span{
+    position: relative;
+    bottom: 5px;
+}
+
+.label_check {
+    display: block;
+    width: 20%;
+}
+
+input:focus + .chk {
+    border: solid red 3px;
+}
