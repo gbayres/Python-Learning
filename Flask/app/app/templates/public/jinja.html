@@ -15,4 +15,28 @@
   </div>
 </div>
 
+<h4>Looping and enumerating an iterable</h4>
+<hr>
+
+<strong class="d-block mb-3">Programming languages</strong>
+<ul>
+  {% for lang in langs %}
+  <li>{{ loop.index }} - {{ lang }}</li>
+  {% endfor %}
+</ul>
+
+<h4>Looping key/value pairs in a dict</h4>
+<hr>
+
+<strong class="d-block mb-3">Friends & ages</strong>
+<ul>
+  {% for name, age in friends.items() %}
+  <li>{{ name }}: {{ age }}</li>
+  {% endfor %}
+</ul>
+
+<h4>Calling functions</h4>
+<hr>
+<p>{{ repeat("Jinja is great! ", 10) }}</p>
+
 {% endblock %}

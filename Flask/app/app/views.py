@@ -1,5 +1,6 @@
 from app import app
 from flask import render_template
+from flask import request, redirect
 
 @app.route("/")
 def index():
@@ -59,8 +60,30 @@ def jinja():
     def repeat(x, qty=1):
         return x * qty
 
-     return render_template(
+    return render_template(
         "public/jinja.html", my_name=my_name, my_age=my_age, langs=langs,
         friends=friends, colors=colors, cool=cool, GitRemote=GitRemote, 
         my_remote=my_remote, repeat=repeat
     )
+
+@app.route("/sign_up", methods=["GET", "POST"])
+def sign_up():
+
+    if request.method == "POST":
+
+        req = request.form
+
+        missing = list()
+
+        for k, v in req.items():
+            if v == "":
+                missing.append(k)
+
+        if missing:
+            feedback = f"Missing fields for {', '.join(missing)}"
+            return render_template("public/sign_up.html", feedback=feedback)
+
+        return redirect(request.url)
+
+    return render_template("public/sign_up.html")
+
