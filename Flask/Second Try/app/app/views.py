@@ -95,3 +95,35 @@ def json_example():
     else:
 
         return make_response(jsonify({"message": "Request boy must be JSON"}), 400)
+
+@app.route("/guestbook")
+def guestbook():
+    return render_template("public/guestbook.html")
+
+@app.route("/guestbook/create-entry", methods=["POST"])
+def create_entry():
+    req = request.get_json()
+
+    print(req)
+
+    res = make_response(jsonify({"message": "OK"}), 200)
+
+    return res
+    
+@app.route("/query")
+def query():
+
+    if request.args:
+
+        # We have our query string nicely serialized as a Python dictionary
+        args = request.args
+
+        # We'll create a string to display the parameters & values
+        serialized = ", ".join(f"{k}: {v}" for k, v in request.args.items())
+
+        # Display the query string to the client in a different format
+        return f"(Query) {serialized}", 200
+
+    else:
+
+        return "No query string received", 200 
