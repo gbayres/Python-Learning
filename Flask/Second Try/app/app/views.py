@@ -26,6 +26,9 @@ def allowed_image_filesize(filesize):
 
 @app.route("/")
 def index():
+    cookies = request.cookies
+    flavor = cookies.get("flavor")
+    print(flavor)
     return render_template("public/index.html")
 
 @app.route("/about")
@@ -206,3 +209,22 @@ def get_pdf(pdf_id):
         return send_from_directory(app.config['CLIENT_PDF'], filename=filename, as_attachment=True)
     except FileNotFoundError:
         abort(404)
+
+@app.route("/get-report/<path:path>")
+def get_report(path):
+    try:
+        return send_from_directory(app.config["CLIENT_REPORTS"], filename=path, as_attachment=True)
+    except FileNotFoundError:
+        abort(404)
+
+@app.route("/cookies")
+def cookies():
+    print(request.path)
+    resp = make_response("Cookies")
+    resp.set_cookie(
+        "flavor", 
+        "chocolate chip",
+        max_age=10,
+        path=request.path
+        )
+    return resp
