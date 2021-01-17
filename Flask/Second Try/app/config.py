@@ -1,3 +1,5 @@
+import secrets
+
 class Config(object):
     IMAGE_UPLOADS = "./app/static/uploads"
     ALLOWED_IMAGE_EXTENSIONS = ["JPEG", "JPG", "PNG", "GIF"]
@@ -6,6 +8,7 @@ class Config(object):
     CLIENT_CSV = "/home/gabriel/Programação/Python-Learning/Flask/Second Try/app/app/static/client/csv/"
     CLIENT_PDF = "/home/gabriel/Programação/Python-Learning/Flask/Second Try/app/app/static/client/pdf/"
     CLIENT_REPORTS = "/home/gabriel/Programação/Python-Learning/Flask/Second Try/app/app/static/client/reports/"
+    SECRET_KEY = secrets.token_urlsafe(16)
 
 class ProductionConfig(Config):
     pass
