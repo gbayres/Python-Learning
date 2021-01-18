@@ -6,6 +6,8 @@ import os
 from werkzeug.utils import secure_filename
 from flask import send_file, send_from_directory, safe_join, abort
 from flask import session, url_for
+from flask import flash
+
 
 
 def allowed_image(filename):
@@ -274,3 +276,24 @@ def profile2():
 def sign_out():
     session.pop("USERNAME", None)
     return redirect(url_for("sign_in"))
+
+@app.route("/sign-up2", methods=["GET", "POST"])
+def sign_up2():
+    if request.method == "POST":
+
+        req = request.form 
+
+        username = req.get("username")
+        email = req.get("email")
+        password = req.get("password")
+
+        if not len(password) >= 10:
+            flash("Password length must be at least 10 characters")
+            return redirect(request.url)
+        
+        flash("Account created!")
+
+        return redirect(request.url)
+
+    return render_template("public/sign_up2.html")
+
