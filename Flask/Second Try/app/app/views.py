@@ -288,10 +288,10 @@ def sign_up2():
         password = req.get("password")
 
         if not len(password) >= 10:
-            flash("Password length must be at least 10 characters")
+            flash("Password length must be at least 10 characters", "warning")
             return redirect(request.url)
         
-        flash("Account created!")
+        flash("Account created!", "success")
 
         return redirect(request.url)
 
