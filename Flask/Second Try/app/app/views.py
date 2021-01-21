@@ -7,7 +7,7 @@ from werkzeug.utils import secure_filename
 from flask import send_file, send_from_directory, safe_join, abort
 from flask import session, url_for
 from flask import flash
-
+from flask import abort
 
 
 def allowed_image(filename):
