@@ -1,0 +1,21 @@
+Score,Frente,Verso,ID,Tema,Tempo
+0,Sintomático respiratório,"Pessoa que, durante a estratégia programática de busca ativa, apresenta tosse por 3 semanas ou mais",1,tuberculose,0
+0,Principais formas de apresentação da TB,"Primária, pós-primária e miliar",2,tuberculose,0
+0,Características do líquido pleural na TB pleural,"Características de exsudato, predomínio de linfócitos e baixo rendimento tanto da pesquisa de BAAR (<5%) quanto da cultura (<15%)",3,tuberculose,0
+0,Até quantos dias pode ser colhido o teste do pezinho?,30,4,neonatologia,0
+0,TB mais comum em PVHIV e crianças,TB ganglionar periférica,5,tuberculose,0
+0,Exame radiológico quando há suspeita de lesão uretral em politraumatizado,Uretrocistografia retrógrada,6,urologia,0
+0,Julgue: todo politraumatizado deve ser submetido a um toque retal antes de proceder com a cateterização vesical.,VERDADEIRO,7,urologia,0
+0,Agente etiológico da Leucoencefalopatia Multifocal Progressiva (LEMP),Vírus JC,8,hiv,0
+0,Suspeita em paciente com HIV + dispneia progressiva insidiosa (20 dias) + tosse seca + febre baixa,Pneumocistose,9,hiv,0
+0,80% dos casos de pneumocistose ocorre com CD4 menor que ….,200,10,hiv,0
+0,Radiografia na pneumocistose,"Infiltrado intersticial bilateral difuso, peri-hilar e simétrico. Não há presença de derrame pleural e nem linfadenomegalias.",11,hiv,0
+0,Tto pneumocistose,SMX-TMP 21 dias IV ou VO,12,hiv,0
+0,Pacientes que já tiveram Pneumocistose Pulmonar no passado devem fazer quimioprofilaxia até ... ,Contagem de CD4 ficar acima de 200 e se manter assim por pelo menos 3 meses,13,hiv,0
+0,Medicamentos PrEP,Tenofovir e entricitabina,14,hiv,0
+0,Cirurgia à Hartmann,Sigmoidectomia + colostomia terminal,15,abd agudo,0
+0,Critérios IAMST,"Nas derivações V2 e V3:\nMaior ou igual a 1,5 mm nas mulheres;\nMaior ou igual a 2 mm nos homens acima de 40 anos;\nMaior ou igual a 2,5 mm nos homens abaixo de 40 anos.\n\nEm outras derivações:\nMaior ou igual a 1 mm em duas ou mais derivações contíguas (próximas, relacionadas à mesma parede).\n",16,iam,0
+0,Definição hemoptise maciça,perda sanguínea pelos pulmões maior que 500 a 600 mL em 24 horas,17,tuberculose,0
+0,Tto embolia maciça por aspergiloma, Embolização por cateterismo angiográfico (Embolização por arteriografia brônquica),18,tuberculose,0
+0,Diferença laringoscopio lamina curva e reta,"Curva é colocada na valécula e a reta, na epiglote",19,trauma,0
+0,Via de acesso cirúrgica mais adequada para abordagem da carina,Toracotomia póstero-lateral direita,20,trauma,0
